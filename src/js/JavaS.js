@@ -11,13 +11,15 @@ for (let  i = 0; i < celdas.length; i++) {
             alert("No podemos utilizar esta posición")
         }
 
-        else{
+        else{ 
             console.log(celdas[i]);
             celdas[i].innerHTML = "x";
             selector()
         }
     });
  }
+
+ 
 
  function selector(){
         let celdasVacias = [];
@@ -27,10 +29,7 @@ for (let  i = 0; i < celdas.length; i++) {
             }
         }
         
-        if (celdasVacias.length > 0){
-            const celdasC1q = celdasVacias[Math.floor (Math.random() * celdasVacias.length)];
-            celdas[celdasC1q].innerHTML = "O";
-        }
+      
 
         checkline(0,1,2)
         checkline(3,4,5)
